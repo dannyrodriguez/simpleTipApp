@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Tip Calculator</h1>
+    <div>
+        <table>
+            <tr>
+                <td class="labels">Bill Total $:</td>
+                <td class="numFields"><input id="bill" type="number"/></td>
+            </tr>
+            <tr>
+                <td class="labels">Place Tip %: </td>
+                <td class="numFields"><input id="tip" type="number"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="calculateTip()" value="Calculate Tip" /></td>
+                <td id="result"></td>
+            </tr>
+         </table>
+    </div>
+    <script src="JavaScript.js"></script>
+</body>
+</html>
