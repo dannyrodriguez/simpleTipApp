@@ -3,11 +3,14 @@
 var calculateTip = function () {
     "use strict";
 
-    var bill = Number(document.getElementById("bill").value),
-        tip = Number(document.getElementById("tip").value),
-        percent = tip / 100,
-        calculatedTip = bill * percent,
-        total = bill + calculatedTip;
+    var billValue = Number(document.getElementById("bill").value),
+        tipValue = Number(document.getElementById("tip").value),
+        percent = tipValue / 100,
+        tipTotal = Math.floor(billValue * percent),
+        newBillTotal = billValue + tipTotal;
 
-    document.getElementById("result").innerHTML = "The tip is: $" + calculatedTip + " and your total is: $" + total;
+    // Needs an if statment to check for more than one decimal
+    // Needs a input restriction to keep people from entering more than two numerics after decimal 
+
+    document.getElementById("result").innerHTML = "The tip is: $" + tipTotal + " and your new bill total is: $" + newBillTotal;
 }
